@@ -27,9 +27,7 @@
  
 example of program operation:
 
- 
- 
- ******************
+******************
 
 empty file -> filesText
 
@@ -52,50 +50,6 @@ WE CREATE 2 NEW FILES AUTOMATICALLY: main file and transactional file
 created mainFile.txt
 created transactionFile.txt
 currently created 2 files automatically:
-account number in the main file  name and surname     balance
-100                              Jan Kowalski           24.98
-200                              Anna Nowak           -345.67
-800                              Jakub Sroka           224.62
-400                              Ola Rudnik            -42.16
-300                              Zofia Czekaj            0.00
-500                              Jakub Sroka           224.62
-700                              Artur Mistrz          800.00
-500                              Jakub Sroka            32.00
-300                              Zo Fa                   0.00
-
-
-
-account number in the transaction file  transaction amount
-100                                     27.14
-300                                     0.00
-900                                     82.17
-400                                     66.56
-700                                     -30.00
-
-
-
-displays 2 files after increasing segregation (account number): 
-account number in the main file  name and surname     balance
-100                              Jan Kowalski           24.98
-200                              Anna Nowak           -345.67
-300                              Zofia Czekaj             0.0
-300                              Zo Fa                    0.0
-400                              Ola Rudnik            -42.16
-500                              Jakub Sroka           224.62
-500                              Jakub Sroka             32.0
-700                              Artur Mistrz           800.0
-800                              Jakub Sroka           224.62
-
-
-
-account number in the transaction file  transaction amount
-100                                     27.14
-300                                     0.00
-400                                     66.56
-700                                     -30.00
-900                                     82.17
-
-
 
 displays 2 new files: result.txt and log.txt:
 - result.txt -> list of customers with their transactions (shopping or payment)
@@ -144,3 +98,7 @@ show file log:
  900 82.17
 
 *********************************
+
+
+Process finished with exit code 0
+
