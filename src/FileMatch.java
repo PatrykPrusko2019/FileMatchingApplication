@@ -130,7 +130,7 @@ public class FileMatch {
      */
     private String getResultOfTransaction(double transactionAmount) {
         if(transactionAmount == 0) {
-            return "";
+            return "zero transaction";
         } else if(transactionAmount > 0) {
             return "shopping transaction";
         } else {

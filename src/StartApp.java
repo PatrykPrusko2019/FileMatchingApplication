@@ -8,7 +8,11 @@ import java.nio.file.Paths;
  The program creates 2 text files:
  - main file
  - transactional file
- he later compares these two files, by customer account number:
+
+ later sorts in ascending order by account number and
+ removes duplicate account numbers (leaving the first, the rest removes)
+
+ later compares these two files, by customer account number:
  - if the account numbers in both files match, it checks what the transaction was.
  - if the numbers do not match, it either adds the wrong account number to the log
  file or the given record without changes.
@@ -16,9 +20,10 @@ import java.nio.file.Paths;
  As a result, it shows the results on the console in a new text file and log file
 
  displays 2 new files: result.txt and log.txt:
- - result.txt -> list of customers with their transactions (shopping or payment);
- if the purchase transaction is a positive transaction amount,
- if the payment transaction is a negative transaction amount
+ - result.txt -> list of customers with their transactions (shopping or payment or zero);
+ if the shopping transaction is a positive transaction amount,
+ if the payment transaction is a negative transaction amount,
+ if the zero transaction is a zero transaction amount.
 
  - log.txt -> list of account numbers that are incorrect (from the transaction file)
 
@@ -28,8 +33,6 @@ import java.nio.file.Paths;
  if they are negative (payments) we also add to the customer's balance -> 1000 + (-25) = 975 balance (payment)
  */
 
-//todo add a method: if the number of the account repeats in the main file, then
-// leave the first record, but the next records will be deleted
 
 public class StartApp {
 

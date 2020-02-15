@@ -63,8 +63,6 @@ public class CreateTextFile {
             showOptions();
     }
 
-
-
     private void showOptions() {
         showMenu();
 
@@ -266,10 +264,17 @@ public class CreateTextFile {
         try (FileWriter output = new FileWriter(fileTransaction)) {
 
             output.write("100 27.14\n" +
-                    "300 0\n" +
-                    "900 82.17\n" +
-                    "400 66.56\n" +
-                    "700 -30.00");
+                        "300 0\n"      +
+                        "900 82.17\n"  +
+                        "400 66.56\n"  +
+                        "400 -6.56\n"  +
+                        "500 -30.12\n" +
+                        "400 0.00\n"   +
+                        "200 23.56\n"  +
+                        "200 -36.56\n" +
+                        "90 -36.56\n" +
+                        "-900 -36.56\n" +
+                        "700 -30.00");
             System.out.println("created transactionFile.txt");
 
         } catch (IOException e) {

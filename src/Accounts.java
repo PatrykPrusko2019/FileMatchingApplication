@@ -34,6 +34,7 @@ public class Accounts {
 
         accounts = sortAscendingByAccountNumber(pathOfMainFile, accounts);
 
+
         return accounts;
     }
 
@@ -47,12 +48,36 @@ public class Accounts {
         List<Account> sortedList = accounts.getAccountList();
         sortedList = sortedList.stream().sorted((o1, o2) -> o1.compareTo(o2)).collect(Collectors.toList());
 
+        sortedList = removeDuplicateAccountNumbers(sortedList); // removes duplicate account number
+
         accounts.setAccountList(sortedList);
 
         sortMainFile(accounts, pathOfMainFile);
 
 
         return accounts;
+    }
+
+
+    /**
+     * removes duplicate account numbers form the main file
+     * @param sortedList
+     * @return returns a list of unique accounts
+     */
+    private List<Account> removeDuplicateAccountNumbers(List<Account> sortedList) {
+
+        int numberAccount;
+        for(int i = 0; i < sortedList.size(); i++) {
+            numberAccount = sortedList.get(i).getAccountNumber();
+            for(int j = i+1; j < sortedList.size(); j++) {
+
+                if( numberAccount == sortedList.get(j).getAccountNumber() ) {
+                    sortedList.remove(j);
+                    System.out.println("\ndeletes the given duplicate account number -> " + numberAccount + " ...\n");
+                }
+            }
+        }
+        return sortedList;
     }
 
 
