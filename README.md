@@ -49,37 +49,6 @@ WE CREATE 2 NEW FILES AUTOMATICALLY: main file and transactional file
 
 created mainFile.txt
 created transactionFile.txt
-currently created 2 files automatically:
-account number in the main file  name and surname     balance
-100                              Jan Kowalski           24.98
-200                              Anna Nowak           -345.67
-800                              Jakub Sroka           224.62
-400                              Ola Rudnik            -42.16
-300                              Zofia Czekaj            0.00
-500                              Jakub Sroka           224.62
-700                              Artur Mistrz          800.00
-500                              Jakub Sroka            32.00
-0                                Jakub Sroka            32.00
--13                              Jakub Sroka            32.00
-300                              Zo Fa                   0.00
-
-
-
-account number in the transaction file  transaction amount
-100                                     27.14
-300                                     0.00
-900                                     82.17
-400                                     66.56
-400                                     -6.56
-500                                     -30.12
-400                                     0.00
-200                                     23.56
-200                                     -36.56
-90                                      -36.56
--900                                    -36.56
-700                                     -30.00
-
-
 
 
 deletes the given duplicate account number -> 1 ...
@@ -90,32 +59,6 @@ deletes the given duplicate account number -> 300 ...
 
 deletes the given duplicate account number -> 500 ...
 
-displays 2 files after increasing segregation (account number): 
-account number in the main file  name and surname     balance
-1                                Jakub Sroka             32.0
-100                              Jan Kowalski           24.98
-200                              Anna Nowak           -345.67
-300                              Zofia Czekaj             0.0
-400                              Ola Rudnik            -42.16
-500                              Jakub Sroka           224.62
-700                              Artur Mistrz           800.0
-800                              Jakub Sroka           224.62
-
-
-
-account number in the transaction file  transaction amount
--900                                    -36.56
-90                                      -36.56
-100                                     27.14
-200                                     23.56
-200                                     -36.56
-300                                     0.00
-400                                     66.56
-400                                     -6.56
-400                                     0.00
-500                                     -30.12
-700                                     -30.00
-900                                     82.17
 
 
 
