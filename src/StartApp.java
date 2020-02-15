@@ -9,10 +9,14 @@ import java.nio.file.Paths;
  - main file
  - transactional file
 
- later sorts in ascending order by account number and
+
+ Creating a new file with accounts, the user must provide account numbers different
+ and greater than 0, otherwise the client data will be deleted by the program.
+
+ Later sorts in ascending order by account number and
  removes duplicate account numbers (leaving the first, the rest removes)
 
- later compares these two files, by customer account number:
+ Later compares these two files, by customer account number:
  - if the account numbers in both files match, it checks what the transaction was.
  - if the numbers do not match, it either adds the wrong account number to the log
  file or the given record without changes.
@@ -28,7 +32,7 @@ import java.nio.file.Paths;
  - log.txt -> list of account numbers that are incorrect (from the transaction file)
 
 
- assumptions for transactions -> if they are positive (purchases) we add to the
+ Assumptions for transactions -> if they are positive (purchases) we add to the
  customer's balance -> 1000 + 25 = 1025 balance (purchases),
  if they are negative (payments) we also add to the customer's balance -> 1000 + (-25) = 975 balance (payment)
  */

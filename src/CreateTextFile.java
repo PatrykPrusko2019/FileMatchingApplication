@@ -147,6 +147,12 @@ public class CreateTextFile {
      */
     public void createTwoFilesByTheUser() {
 
+        System.out.println("*******************************\n\n" +
+                "the customer account number must be greater than 0, if the user enters several accounts " +
+                "with the number less than 0, then all users are removed by the program and leaves only one of" +
+                " them and sets the account number 1\n" +
+                "*******************************\n");
+
         System.out.println("Provide customer data as in the example:\n" +
                 "300 Patryk Prusko 9000.99\n" +
                 "(use spaces between data, don't use comma)");
@@ -249,11 +255,13 @@ public class CreateTextFile {
         try (FileWriter output = new FileWriter(fileMain) ) {
 
             output.write("100 Jan Kowalski 24.98\n200 Anna Nowak -345.67\n800 Jakub Sroka 224.62\n" +
-                    "400 Ola Rudnik -42.16\n" +
-                    "300 Zofia Czekaj 0.00\n" +
-                    "500 Jakub Sroka 224.62\n" +
+                    "400 Ola Rudnik -42.16\n"   +
+                    "300 Zofia Czekaj 0.00\n"   +
+                    "500 Jakub Sroka 224.62\n"  +
                     "700 Artur Mistrz 800.00\n" +
-                    "500 Jakub Sroka 32.00\n" +
+                    "500 Jakub Sroka 32.00\n"   +
+                    "0 Jakub Sroka 32.00\n"     +
+                    "-13 Jakub Sroka 32.00\n"   +
                     "300 Zo Fa 0.00");
             System.out.println("created mainFile.txt");
         } catch (IOException e) {

@@ -9,16 +9,24 @@ public class Account implements Comparable<Account>{
    
 
    public Account() {
-      this(0, "----", "----", 0.00);
+      this(1, "----", "----", 0.00);
    }
 
    public Account(int accountNumber, String firstName,
                   String lastName, double balance) {
 
-      this.accountNumber = accountNumber;
+      this.accountNumber = checksTheAccountNumber(accountNumber);
       this.firstName = checksTheString(firstName);
       this.lastName = checksTheString(lastName);
       this.balance = balance;
+   }
+
+   private int checksTheAccountNumber(int accountNumber) {
+      if(accountNumber < 1) {
+         return 1;
+      } else {
+         return accountNumber;
+      }
    }
 
    private String checksTheString(String name) {
