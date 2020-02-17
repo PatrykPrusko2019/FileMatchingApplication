@@ -1,24 +1,27 @@
 1. customer of bank
+Account{accountNumber=1, firstName='Jakub', lastName='Sroka', balance=32.0}
+account balance: 32.00, no transactions
+2. customer of bank
 Account{accountNumber=100, firstName='Jan', lastName='Kowalski', balance=24.98}
 account balance: 52.12 -> shopping transaction
-2. customer of bank
+3. customer of bank
 Account{accountNumber=200, firstName='Anna', lastName='Nowak', balance=-345.67}
 account balance: -322.11 -> shopping transaction
 account balance: -358.67 -> payment transaction
-3. customer of bank
+4. customer of bank
 Account{accountNumber=300, firstName='Zofia', lastName='Czekaj', balance=0.0}
 account balance: 0.00 -> zero transaction
-4. customer of bank
+5. customer of bank
 Account{accountNumber=400, firstName='Ola', lastName='Rudnik', balance=-42.16}
 account balance: 24.40 -> shopping transaction
 account balance: 17.84 -> payment transaction
 account balance: 17.84 -> zero transaction
-5. customer of bank
+6. customer of bank
 Account{accountNumber=500, firstName='Jakub', lastName='Sroka', balance=224.62}
 account balance: 194.50 -> payment transaction
-6. customer of bank
+7. customer of bank
 Account{accountNumber=700, firstName='Artur', lastName='Mistrz', balance=800.0}
 account balance: 770.00 -> payment transaction
-7. customer of bank
+8. customer of bank
 Account{accountNumber=800, firstName='Jakub', lastName='Sroka', balance=224.62}
 account balance: 224.62, no transactions

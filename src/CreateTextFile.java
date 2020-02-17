@@ -107,8 +107,12 @@ public class CreateTextFile {
                     case 4: {
                         System.out.println("*******************************\n2 current files\n" +
                                 "*******************************\n");
-                        System.out.println("2 current files:");
-                        showTwoFiles();
+
+                        if( checkTheFiles( getMainFile().toFile(), getTransactionFile().toFile() ) ) {
+                            showTwoFiles();
+                        } else {
+                            exit = true;
+                        }
                         break;
                     }
                     case 5: {
